@@ -1,8 +1,8 @@
-def bubbleSort(arr):
-    n = len(arr)
-    swapped = False
+def bubbleSort(A):
+    n = len(A)
+    flag    = False
     for i in range(n-1):
         for j in range(0, n-i-1):
-            if arr[j] > arr[j + 1]:
-                swapped = True
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+            if A[j] > A[j + 1]:
+                flag = True
+                A[j], A[j + 1] = A[j + 1], A[j]
